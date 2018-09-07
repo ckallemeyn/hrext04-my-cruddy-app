@@ -36,47 +36,41 @@
 
   ## Feature list
   * denotes on my to do for the project
-  2.5 days = 20 hours
+  2.5 days = 24 - 30 hours
 
-  ### difficulty scale 1-10. 1 meaning it's already finished 10 meaning what?!?!
+  ### difficulty scale 1-10. 
+  1 - 30min.
+  2 - 1 hour
+  3 - 2 hours
+  4 - 3 - 3 1/2 hours
+  5 = 4 hours
+  7 = 6 hours
+  8 = 8 hours
+  9 = 10 - 15 hours
+  10 = full day + help from other devs
+  
+  RECIPE APP: CKBK condensed for cookbook
 
-  5 = 3 hours
-  7 = 5 hours
-  10 = full day + ??
+  List is shown in prioritized order:
+  (7) ability to select and delete multiple items using a checkbox for each individual item
+  (3) highlight recipe ingredient names when hovered over change each text to blue
+  (4) Recipe categories in Nav-bar or the hamburger stack (i.e. breakfast, lunch, dinner,  )
+  (9) fix the layout by adding styling and positioning for elements on the page.
+  (7) time stamps (moment.js) or (timeago.js)
+  (3) delete recipe ingredient confirmation
+  (6) show deleted items and allow for undelete with toggle
+  (4) strike-through completed/deleted items (styling)
+  (6) category pages (not really pages, just a show/hide trick)
+  (7) ability to add/leave comments on item (this is not necessary, but could be a cool feature...)
+  (9) drag and drop to arrange (seems like a cool idea, but could be difficult to figure out.)
 
-  *(5) add due date
-  *(7) time stamps (moment.js)
-  (5) format the display of the items in a list (need to add more detail)
-  (??) fix the layout
-  (7) color coded priority
-  highlight certain items
-  mouse over to see details
-  ability to select and delete multiple items (checkbox?)
-  add status/priorty and allow for sorting based on status/priority
-  Item categories
-  ability to add/leave comments on item
-  upload files/images
-  share item
-  drag and drop to arrange
-  search/filter on keyup/keydown
-  reminders? (push operation?)
-  secret corgi
-  delete item confirmation
-  fillet edges of boxes
-  font changes/choices? (google fonts)
-  Panic Button
-  Highlight based on status/priority/due date
-  options page (ability to set/toggle options)
-  show deleted items and allow for undelete
-  pagination (if more than 10 show a next button)
-  category pages (not really pages, just a show/hide trick)
-  strike-through completed/deleted items (styling)
-  add more items button, that shows another input section allowing for multiple items to be added at once
-  Fun stuff
-  auto-complete when searching/filtering
+  
+  
+ 
+  
 
 
-
+ 
 
 
 

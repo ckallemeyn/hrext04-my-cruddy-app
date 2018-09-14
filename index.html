@@ -5,6 +5,8 @@
   <title>Appetize!</title>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Raleway" rel="stylesheet">
+
   
   <link rel='stylesheet prefetch'  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -13,7 +15,42 @@
 </head>
 
 <body>
-  <h1>Appetize!</h1>
+ <header>
+  <nav class="nav-wrapper red lighten-1">
+    <div class="container">
+ <!-- 
+ tried to add search bar, but ran into issues.      
+
+        <div class="input-field">
+          <input id="search" type="search" ng-model="searchText" placeholder="Find an appetizer!" required>
+          <label class="label-icon" for="search">
+            <i class="material-icons">search</i>
+          </label>
+        </div> -->
+
+      <a href="#" id="title"class="brand-logo center">Appetize!</a>
+      <a href="#" class="sidenav-trigger" data-target="mobile-links">
+        <i class="material-icons right">menu</i>
+      </a>
+      <ul class= "right hide-on-med-and-down">
+        <li><a href="#" class="">Home</a></li>
+        <li><a href="#" class="">About</a></li>
+        <li><a href="#" class="">Contact</a></li>
+        <li><a href="#" class="">links</a></li>
+      </ul>
+    </div>
+  </nav><!-- end of nav -->
+
+    <ul class="sidenav" id="mobile-links">
+      <li><a href="#" class="">Home</a></li>
+      <li><a href="#" class="">About</a></li>
+      <li><a href="#" class="">Contact</a></li>
+      <li><a href="#" class="">Links</a></li>
+      <li><a href="#" class="">Login</a></li>
+    </ul>
+  </header>
+
+<!--   <h1>Appetize!</h1> -->
   <div ng-app="recipeBoxApp" ng-controller="recipeBoxCtrl">
 
  <div class="container">
@@ -36,8 +73,8 @@
    </div> -->
 
    <!-- Right - add recipe -->
-   <div class="col-6">
-    <div class="card">
+   <div class="col-6 z-depth-3">
+    <div class="card ">
      <div class="card-content">
       New Appetizer 
       <form ng-submit="addRecipe()">
@@ -57,12 +94,12 @@
     </div>
    </div> <!-- column -->
 
-     <div class="col-6">
+     <div class="col-6 z-depth-3">
     <ul class="collapsible" data-collapsible="accordion">
      <li ng-repeat="recipe in recipeList | filter track by $index">
       <div class="collapsible-header amber lighten-5">{{recipe.title}}</div>
       <div class="collapsible-body black">
-       <div class="white-text">{{recipe.ingredients}}</div>
+       <div class="amber-text lighten-2">{{recipe.ingredients}}</div>
        <div class="recipeBtn">
         <a href="#" ng-click="editRecipe($index)" class="btn red lighten-1 waves-effect waves-light">
            <span>Edit</span>
@@ -72,8 +109,6 @@
            <span>Delete</span>
            <i class="material-icons white-text right">delete</i>
         </a>
-      <!--   <button class="red lighten-1 white-text" ng-click="editRecipe($index)">Edit</button>
-        <button class="red lighten-1 white-text" ng-click="deleteRecipe($index)">Delete</button> -->
        </div>
       </div>
      </li>

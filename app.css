@@ -7,7 +7,7 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: Arial;
+  font-family: Raleway, sans-serif;
 }
 *, *:before, *:after {box-sizing: inherit;}
 
@@ -27,10 +27,22 @@ body{
 
  h1 {
   color: #37b6ac;
+  font-family: Homemade Apple, cursive;
+  font-size: 8em;
+  padding-bottom: 10px
  }
  .card-content {
   color:#37b6ac;
 }
 .collapsible-header{
+  color: #37b6ac;
+}
+
+.brand-logo{
+  color: #37b6ac;
+  font-family: Homemade Apple, cursive;
+}
+
+#title {
   color: #37b6ac;
 }

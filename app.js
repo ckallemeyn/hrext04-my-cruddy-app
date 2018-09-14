@@ -9,14 +9,14 @@ var app = angular.module('recipeBoxApp', [])
    title: "Easy Cheese Straws",
    ingredients: "1/2 cup of butter, 2 cups of shredded cheese, 1 cup flour, 1/2 tsp salt, 1/4 tsp cayenne pepper"
   }, {
-   title: "Ice-cream",
-   ingredients: "Milk, Chocolate, Sugar"
+   title: "Bacon Water Chestnut Wraps",
+   ingredients: "1lb of bacon strips, 16 oz whole water chestnuts, 1/2 cup packed brown sugar, 1/2 cup mayonnaise, 1/4 cup chili sauce"
   }, {
-   title: "Cheesecake",
-   ingredients: "Milk, cream, buscuits, sugar"
+   title: "Swiss Cheese Bread",
+   ingredients: "1 loaf of french bread, 8oz butter, 2 cups shredded Swiss cheese, 3/4 tsp celery seed, 3/4 tsp garlic powder, 3 Tbs parsley flakes"
   }, {
-   title: "Cake",
-   ingredients: "Milk, eggs, vanilla, chocolate"
+   title: "Buffalo Wing Poppers",
+   ingredients: "20 jalapeno peppers, 8oz cream cheese, 1 cup shredded mozzarella cheese, 1 cup diced cooked chicken, 1/2 cup blue cheese salad dressing, 1/2 cup of buffalo wing sauce"
   }]
   localStorage.setItem('_ckallemeyn_recipebox', JSON.stringify($scope.recipeList));
 
@@ -54,6 +54,7 @@ var app = angular.module('recipeBoxApp', [])
 //jQuery for Collapsible area 
   $(document).ready(function(){
     $('.collapsible').collapsible();
+    $('.sidenav').sidenav();
   });
 /*$(document).ready(function() {
 

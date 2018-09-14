@@ -22,11 +22,10 @@ var app = angular.module('recipeBoxApp', [])
 
 
   $scope.addRecipe = function() {
-   if ($scope.newRecipe != null && $scope.newIngredients != null) {
+   if ($scope.newRecipe !== null && $scope.newIngredients !== null) {
      $scope.recipeList.push({
      title: $scope.newRecipe,
      ingredients: $scope.newIngredients
-
     })
     localStorage.setItem('_ckallemeyn_recipebox', JSON.stringify($scope.recipeList));
     $scope.newRecipe = null;
@@ -35,7 +34,7 @@ var app = angular.module('recipeBoxApp', [])
   }
 
   $scope.deleteRecipe = function(index) {
-   if (confirm("This recipe is going to be deleted")) {
+   if (confirm("Are you sure you want to delete this recipe?")) {
     $scope.recipeList.splice(index, 1)
     localStorage.setItem('_ckallemeyn_recipebox', JSON.stringify($scope.recipeList));
    }
@@ -43,7 +42,7 @@ var app = angular.module('recipeBoxApp', [])
   
   $scope.editRecipe = function(index) {
    var ingredients = $scope.recipeList[index].ingredients
-   var result = prompt("Edit the ingredients: ", ingredients)
+   var result = prompt("What would you like to change? ", ingredients)
    if(result != null){
     $scope.recipeList[index].ingredients = result;
     localStorage.setItem('_ckallemeyn_recipebox', JSON.stringify($scope.recipeList));

@@ -47,7 +47,7 @@
        <div class="input-field">
         <input type="text" ng-model="newIngredients" placeholder="Ingredients (use commas to seperate!)" class="white-text">
        </div>
-       <a href="#" class="btn red lighten-1 waves-effect waves-light">
+       <a href="#" ng-click="addRecipe()" class="btn red lighten-1 waves-effect waves-light">
          <span>Add</span>
          <i class="material-icons white-text right">local_dining</i>
        </a>      
@@ -62,7 +62,7 @@
      <li ng-repeat="recipe in recipeList | filter track by $index">
       <div class="collapsible-header">{{recipe.title}}</div>
       <div class="collapsible-body">
-       <div>{{recipe.ingredients}}</div>
+       <div class="white-text">{{recipe.ingredients}}</div>
        <div class="recipeBtn">
         <a href="#" ng-click="editRecipe($index)" class="btn red lighten-1 waves-effect waves-light">
            <span>Edit</span>

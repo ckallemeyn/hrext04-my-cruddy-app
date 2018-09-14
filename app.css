@@ -24,3 +24,13 @@ body{
   color: white;
   font-size: 1.2em;
  } 
+
+ h1 {
+  color: #37b6ac;
+ }
+ .card-content {
+  color:#37b6ac;
+}
+.collapsible-header{
+  color: #37b6ac;
+}

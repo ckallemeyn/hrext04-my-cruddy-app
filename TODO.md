@@ -18,15 +18,14 @@
      - [ ] Confirmation of delete/update
      - [ ] Sortable list
      - [ ] Navigation/Pagination
-     - [ ] Mouse over Preview
      - [ ] Searching/Filtering
      - [ ] Animations/Transitions
 
   - [ ] Library Considerations
-    - [ ] underscore
     - [√] jquery
-    - [ ] moment.js
-    - [ ] c3.js (charts.js)
+    - [√] bootstrap.css
+    - [√] angular.js
+    - [√] materialize.css
 
  ## Next Steps
 
